@@ -1,2 +1,2 @@
 
-export { AppServerModule } from './app/app.server.module';
+export { RootServerModule } from './root.server.module';

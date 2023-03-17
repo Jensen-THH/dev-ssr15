@@ -1,22 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, isDevMode } from '@angular/core';
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './modules/general/home/home.component';
-import { NotFoundComponent } from './modules/general/not-found/not-found.component';
-import { AppRoutingModule } from './app-routing.module';
+import { RootComponent } from './root.component';
+import { HomeComponent } from './app/modules/general/home/home.component';
+import { NotFoundComponent } from './app/modules/general/not-found/not-found.component';
+import { RootRoutingModule } from './root-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    // HomeComponent,
-    // NotFoundComponent,
+    RootComponent,
+    HomeComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'angular-starter' }),
-    AppRoutingModule,
+    RootRoutingModule,
     HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
@@ -26,6 +26,6 @@ import { HttpClientModule } from '@angular/common/http';
     }),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [RootComponent]
 })
-export class AppModule { }
+export class RootModule { }
