@@ -1,13 +1,3 @@
-// import { Component } from '@angular/core';
-
-// @Component({
-//   selector: 'app-root',
-//   templateUrl: './root.component.html',
-//   styleUrls: ['./root.component.css']
-// })
-// export class RootComponent {
-
-// }
 import { Component, OnInit } from '@angular/core';
 import { Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
