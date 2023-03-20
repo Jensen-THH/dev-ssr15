@@ -11,4 +11,4 @@ import { RootModule } from './root.module';
   ],
   bootstrap: [RootComponent],
 })
-export class RootServerModule {}
+export class AppServerModule {}

@@ -12,6 +12,6 @@
     "server.ts"
   ],
   "angularCompilerOptions": {
-    "entryModule": "src/root.server.module#RootServerModule"
+    "entryModule": "src/root.server.module#AppServerModule"
   }
 }
